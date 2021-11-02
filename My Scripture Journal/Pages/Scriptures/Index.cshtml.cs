@@ -41,8 +41,8 @@ namespace My_Scripture_Journal.Pages.Scriptures
 
             // Use LINQ to get list of genres.
             IQueryable<string> bookQuery = from m in _context.Scripture
-                                            orderby m.Book
-                                            select m.Book;
+                                           orderby m.Book
+                                           select m.Book;
 
             var scriptures = from m in _context.Scripture
                          select m;
